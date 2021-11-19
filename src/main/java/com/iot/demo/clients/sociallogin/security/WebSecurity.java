@@ -39,7 +39,7 @@ public class WebSecurity extends WebSecurityConfigurerAdapter
                 .deleteCookies("JSESSIONID");
     }
 
-    // NOTE: Works only for Okta (does not work for Facebook, Google...)
+    // NOTE: Works only for Okta (does not work for Keycloak, Facebook, Google...)
     private OidcClientInitiatedLogoutSuccessHandler oidcLogoutSuccessHandler()
     {
         final OidcClientInitiatedLogoutSuccessHandler successHandler =
