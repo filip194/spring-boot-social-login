@@ -1,0 +1,17 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-4.dtd">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://wwww.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+</head>
+<body>
+    <h1>Home Page</h1>
+
+    <p>Welcome <span th:text="${name}"></span></p>
+
+    <p>
+<!--        default logout path configured in Spring framework-->
+        <a href="/logout">Logout</a>
+    </p>
+</body>
+</html>
